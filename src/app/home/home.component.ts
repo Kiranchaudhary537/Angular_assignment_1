@@ -24,6 +24,7 @@ export class HomeComponent implements OnInit {
   }
   changeToastVisibility(): void {
     this.messageShow = !this.messageShow;
+    this.employeeName = '';
   }
   timeOut(): void {
     setTimeout(() => {
@@ -46,13 +47,13 @@ export class HomeComponent implements OnInit {
   }
   deleteEmployee(): void {
     this.messageShow = true;
-    this.modelShow=false;
+    this.modelShow = false;
     this.employeeService.deleteEmployee(this.employeeId);
     this.employees = this.employees.filter(
       (employee) => employee.id !== this.employeeId
     );
-    this.employeeId=0;
-    this.employeeName='';
+    this.employeeId = 0;
+
     this.timeOut();
   }
 }
