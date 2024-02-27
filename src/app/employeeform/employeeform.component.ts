@@ -160,7 +160,7 @@ export class EmployeeformComponent implements OnInit {
     if (this.form.invalid) {
       return;
     }
-
+  //check for employeeId
     if (this.employeeId != null) {
       this.employeeService.editEmployee(
         parseInt(this.employeeId),
@@ -172,6 +172,7 @@ export class EmployeeformComponent implements OnInit {
         this.userExists = true;
         return;
       }
+      //add employee
       this.employeeService.addEmployee(this.form.value);
     }
     this.location.back();
