@@ -34,7 +34,7 @@ thead {
 }
 
 /* Button style */
-button {
+#addEmployeeButton {
   padding: 8px 20px;
   background-color: #4caf50;
   color: white;
@@ -43,13 +43,11 @@ button {
   cursor: pointer;
 }
 
-button:hover {
+#addEmployeeButton:hover {
   background-color: #45a049;
 }
 
-/* Elements style */
-input[type="text"],
-button {
+#addEmployeeButton {
   padding: 8px;
   margin-bottom: 10px;
   width: 100%;
@@ -62,4 +60,20 @@ button {
 a {
   text-decoration: none;
   color: white;
+}
+
+/* toast style */
+#toast-success {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+}
+
+/* Model style */
+#model-interactive {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 9999; /* Ensure it appears above all other elements */
 }

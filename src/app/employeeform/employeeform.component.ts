@@ -115,6 +115,8 @@ export class EmployeeformComponent implements OnInit {
       gender: [this.employee.gender, Validators.required],
       skills: this.formBuilder.array(existingSkills),
     });
+
+    console.log(this.form);
   }
 
   // Getter for form controls

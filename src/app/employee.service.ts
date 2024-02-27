@@ -9,13 +9,17 @@ export class EmployeeService {
     {
       id: 1,
       name: 'kiran',
-      contactNumber: '987486985',
+      contactNumber: '9874868985',
       email: 'kiranchaudhary43@gmail.com',
       gender: 'Male',
       skills: [
         {
-          name: 'kiran',
-          experience: 'beginner',
+          name: 'js',
+          experience: '1years',
+        },
+        {
+          name: 'jads',
+          experience: '2years',
         },
       ],
     },

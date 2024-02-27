@@ -106,9 +106,10 @@
                           }"
                         >
                           <option value="">Select Experience</option>
-                          <option value="beginner">Beginner</option>
-                          <option value="medium">Medium</option>
-                          <option value="expert">Expert</option>
+                          <option value="1years">1Years</option>
+                          <option value="2years">2Years</option>
+                          <option value="3years">3Years</option>
+                          <option value="4years">4Years</option>
                         </select>
                         @if (submitted &&
                         skillscon(i).controls['experience'].errors) {
@@ -118,6 +119,7 @@
                         }
                       </div>
                       <!-- Remove Skill Button -->
+                      @if(skillsdata().controls.length>1){
                       <div class="bg-red-500 mt-2 rounded-b-md h-8 w-8">
                         <img
                           src="./../../assets/remove.png"
@@ -126,6 +128,7 @@
                           (click)="removeSkills(i)"
                         />
                       </div>
+                      }
                     </div>
                   </div>
                 </div>
