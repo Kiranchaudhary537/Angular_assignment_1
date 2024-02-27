@@ -1,0 +1,16 @@
+.invalid-feedback {
+  color: red;
+  font-size: 12px;
+}
+
+input {
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin: 1px;
+}
+
+input:focus {
+  outline: none;
+  border-color: #007bff;
+}
