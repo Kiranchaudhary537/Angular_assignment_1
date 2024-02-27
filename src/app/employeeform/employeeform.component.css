@@ -14,3 +14,19 @@ input:focus {
   outline: none;
   border-color: #007bff;
 }
+
+/* style for select element */
+
+select {
+  appearance: none;
+  background-color: transparent;
+  border: 1px solid #ccc;
+  padding: 0.5em 1em;
+  margin: 0;
+  border-radius: 5px;
+  /* Style the arrow */
+  background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'%3E%3Cpath d='M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 0.5em center;
+  background-size: 1em;
+}

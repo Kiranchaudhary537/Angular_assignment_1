@@ -15,7 +15,7 @@ export class EmployeeService {
       skills: [
         {
           name: 'kiran',
-          experience: 'traineee',
+          experience: 'beginner',
         },
       ],
     },

@@ -96,22 +96,24 @@
                       </div>
                       <!-- Experience -->
                       <div>
-                        <input
-                          type="text"
+                        <select
                           formControlName="experience"
-                          placeholder="Experience"
-                          class="form-control"
+                          class="form-select"
                           [ngClass]="{
                             'is-invalid':
                               submitted &&
                               skillscon(i).controls['experience'].errors
                           }"
-                        />
-                        <!-- Error message for Experience -->
+                        >
+                          <option value="">Select Experience</option>
+                          <option value="beginner">Beginner</option>
+                          <option value="medium">Medium</option>
+                          <option value="expert">Expert</option>
+                        </select>
                         @if (submitted &&
-                        skillscon(i).controls['experience'].errors ) {
+                        skillscon(i).controls['experience'].errors) {
                         <div class="invalid-feedback">
-                          experience is required
+                          <div>Experience is required</div>
                         </div>
                         }
                       </div>
